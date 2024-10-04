@@ -302,7 +302,7 @@ idols.forEach((idol) => {
       localStorage.setItem(key, "1");
     }
   });
-  idol.addEventListener("mouseover", () => {
+  idol.addEventListener("click", () => {
     // Switch the a tag to its respective idol link
     Object.keys(idolLocations).forEach((key) => {
       if (idol.classList.contains(key)) {
