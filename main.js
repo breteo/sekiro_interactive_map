@@ -340,7 +340,7 @@ bosses.forEach((boss) => {
       localStorage.setItem(key, "1");
     }
   });
-  boss.addEventListener("mouseover", () => {
+  boss.addEventListener("click", () => {
     // Switch the a tag to its respective boss link
     Object.keys(bossLocations).forEach((key) => {
       if (boss.classList.contains(key)) {
@@ -378,7 +378,7 @@ merchants.forEach((merchant) => {
       localStorage.setItem(key, "1");
     }
   });
-  merchant.addEventListener("mouseover", () => {
+  merchant.addEventListener("click", () => {
     // Switch the a tag to its respective merchant link
     Object.keys(merchantLocations).forEach((key) => {
       if (merchant.classList.contains(key)) {
@@ -418,7 +418,7 @@ items.forEach((item) => {
       // console.log(`added opacity at ${key} and set in storage`);
     }
   });
-  item.addEventListener("mouseover", () => {
+  item.addEventListener("click", () => {
     // Switch the a tag to its respective item link
     Object.keys(itemLocations).forEach((key) => {
       if (item.classList.contains(key)) {
